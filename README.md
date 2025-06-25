@@ -1,36 +1,74 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+<div align="center">
+    <a href="https://decathlon.fr/">
+        <img alt="Teamwear" src="assets/banner.png" style="max-height: 500px" />
+    </a>
+</div>
 
-## Getting Started
+<br />
 
-First, run the development server:
+<div align="center">
+    <img src="https://img.shields.io/npm/v/ai-invoice-extractor" alt="Version" />
+    <img src="https://img.shields.io/github/actions/workflow/status/wellapp-ai/well/ai-invoice-extractor-ci" alt="Build Status">
+</a>
+</div>
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+<br />
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+<div align="center"><strong>Teamwear</strong></div>
+<div align="center"> Customizable assets for sports teams.</div>
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+<br />
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+<div align="center">
+<a href="https://">Prod</a> 
+<span> · </span>
+<a href="https://">Jira</a>
+<span> · </span>
+<a href="https://">Wiki</a>
+</div>
 
-## Learn More
+<br />
 
-To learn more about Next.js, take a look at the following resources:
+## 🍰 Stack
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- Language: [Typescript](https://www.typescriptlang.org/docs/)
+- Framework: [Next.js](https://nextjs.org/docs)
+- Styling: [Tailwind](https://tailwindcss.com/docs/styling-with-utility-classes)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+**Tooling**
+- Lint/Format: [Biome](https://biomejs.dev/formatter/)
+- Variable env: [Dotenvx](https://dotenvx.com/)
+- Git Hooks: [Husky](https://typicode.github.io/husky/how-to.html)
+- Git Lint: [Commit Lint](https://commitlint.js.org/guides/getting-started.html)
 
-## Deploy on Vercel
+## 🚀 Get started
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+1. Ask the `.env.keys` [to the team](https://mail.google.com/mail/u/0/#chat/space/AAQACPYdmps) and place it at the root directory
+2. Run `pnpm install` to install dependencies
+3. Open [https://localhost:3000](https://localhost:3000)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 🤝 How to contribute
+
+1. Choose a Jira in [the active sprint](https://decathlon.atlassian.net/jira/software/c/projects/ODVC/boards/5582)
+2. Create a git branch following the Jira snippet
+3. Commit...
+4. Create a [GitHub PR](https://github.com/dktunited/teamwear/pulls)
+5. Assign someone or an AI to review
+6. Merge your branch to main
+7. Delete your remote/local branch
+
+**Some more advice:**
+- Less is more
+- Ask for help when needed
+- Do pair programming to learn/educate
+- Write down important decisions under `docs/`
+
+## 📦 How to deploy
+
+When you create a GitHub PR, a preview environment with a unique URL is created to show/share your change. When you delete/merge a GitHub PR, your preview environment is automatically deleted.
+
+When you create a release on GitHub, a new version is deployed on production. 
+
+## 📝 Copyright
+
+© Decathlon - All rights reserved.
