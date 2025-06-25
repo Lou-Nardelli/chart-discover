@@ -8,6 +8,7 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
+    "test": "echo 'No tests yet'",
     "lint": "biome lint --write ./**/*.{js,jsx,mjs,ts,tsx}",
     "lint:staged": "biome check --fix --unsafe --error-on-warnings --no-errors-on-unmatched --staged ./**/*.{js,jsx,mjs,ts,tsx}",
     "typecheck": "tsc --noEmit"
