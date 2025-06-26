@@ -65,9 +65,18 @@
 
 ## 📦 How to deploy
 
-When you create a GitHub PR, a preview environment with a unique URL is created to show/share your change. When you delete/merge a GitHub PR, your preview environment is automatically deleted.
+### Preview 
 
-When you create a release on GitHub, a new version is deployed on production. 
+When you [create a GitHub PR][createpr], a preview environment with a unique URL is created to show/share your change.  
+When you merge a GitHub PR, your preview environment is automatically deleted.
+
+[createpr]: https://github.com/dktunited/teamwear/compare
+
+### Production
+
+When you [create a GitHub Release][createrelease], a new version is deployed on production. 
+
+[createrelease]: https://github.com/dktunited/teamwear/releases/new
 
 ## 📝 Copyright
 
