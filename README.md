@@ -76,6 +76,10 @@ When you merge a GitHub PR, your preview environment is automatically deleted.
 
 When you [create a GitHub Release][createrelease], a new version is deployed on production. 
 
+### Good to know
+
+When you deploy anywhere, you have to set only one environment variable: `DOTENV_PRIVATE_KEY_PRODUCTION` or `DOTENV_PRIVATE_KEY_DEVELOPMENT` to decrypt and inject all variables properly.
+
 [createrelease]: https://github.com/dktunited/teamwear/releases/new
 
 ## 📝 Copyright
