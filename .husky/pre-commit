@@ -1,3 +1,7 @@
+#!/bin/bash
+. ~/.nvm/nvm.sh
+nvm use
+
 echo "\n==============================="
 echo "🔍 Linting staged files"
 echo "==============================="

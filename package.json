@@ -1,6 +1,6 @@
 {
   "name": "teamwear",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "prepare": "node .husky/install.mjs",
@@ -9,33 +9,33 @@
     "build": "dotenvx run --strict -f .env.production -fk .env.keys --overload -- next build",
     "start": "dotenvx run --strict -f .env.production -fk .env.keys --overload -- next start",
     "test": "echo 'No tests yet'",
-    "lint": "biome lint --write ./**/*.{js,jsx,mjs,ts,tsx}",
-    "lint:staged": "biome check --fix --unsafe --error-on-warnings --no-errors-on-unmatched --staged ./**/*.{js,jsx,mjs,ts,tsx}",
+    "lint-staged": "lint-staged",
+    "lint": "biome check --fix .",
+    "lint:staged": "biome check --fix --staged --error-on-warnings --no-errors-on-unmatched",
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "next": "15.3.4",
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "next": "^15.3.4",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
   },
   "devDependencies": {
     "@biomejs/biome": "2.0.5",
     "@commitlint/cli": "^19.8.1",
     "@commitlint/config-conventional": "^19.8.1",
     "@dotenvx/dotenvx": "^1.45.1",
-    "@tailwindcss/postcss": "^4",
+    "@tailwindcss/postcss": "^4.1.11",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "husky": "^9.1.7",
     "lint-staged": "^16.1.2",
-    "tailwindcss": "^4",
-    "typescript": "^5",
-    "ultracite": "5.0.19"
+    "tailwindcss": "^4.1.11",
+    "typescript": "^5.8.3",
+    "ultracite": "^5.0.19"
   },
-  "lint-staged": {
-    "*.{js,jsx,ts,tsx,json,jsonc,css,scss,md,mdx}": [
-      "pnpm run lint:staged"
-    ]
+  "engines": {
+    "pnpm": ">=9",
+    "node": ">=22 <=22.14.0"
   }
 }

@@ -1,14 +1,18 @@
+#!/bin/bash
+. ~/.nvm/nvm.sh
+nvm use
+
 echo "\n==============================="
 echo "🔍 Check tests errors"
 echo "==============================="
 
-bun run test || exit 1
+pnpm run test || exit 1
 
 echo "\n==============================="
 echo "🔍 Check build errors"
 echo "==============================="
 
-bun run build || exit 1
+pnpm run build || exit 1
 
 echo "\n==============================="
 echo "✅ All pre-push checks are good"
