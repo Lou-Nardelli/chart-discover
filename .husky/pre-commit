@@ -6,7 +6,7 @@ echo "\n==============================="
 echo "🔍 Linting staged files"
 echo "==============================="
 
-pnpm run lint:staged || exit 1
+pnpm run lint-staged || exit 1
 
 echo "\n==============================="
 echo "🔍 Check typescript errors"

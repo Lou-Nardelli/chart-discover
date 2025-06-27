@@ -10,9 +10,16 @@
     "start": "dotenvx run --strict -f .env.production -fk .env.keys --overload -- next start",
     "test": "echo 'No tests yet'",
     "lint-staged": "lint-staged",
-    "lint": "biome check --fix .",
-    "lint:staged": "biome check --fix --staged --error-on-warnings --no-errors-on-unmatched",
+    "lint": "pnpm exec eslint .",
+    "lint:fix": "pnpm exec eslint . --fix",
+    "prettier": "prettier --check .",
+    "prettier:fix": "prettier --write --list-different .",
+    "format": "pnpm run lint:fix && pnpm run prettier:fix",
     "typecheck": "tsc --noEmit"
+  },
+  "engines": {
+    "pnpm": ">=9 <10",
+    "node": ">=22 <=22.14.0"
   },
   "dependencies": {
     "next": "^15.3.4",
@@ -20,22 +27,29 @@
     "react-dom": "^19.1.0"
   },
   "devDependencies": {
-    "@biomejs/biome": "2.0.5",
     "@commitlint/cli": "^19.8.1",
     "@commitlint/config-conventional": "^19.8.1",
     "@dotenvx/dotenvx": "^1.45.1",
+    "@eslint/eslintrc": "^3.3.1",
+    "@next/eslint-plugin-next": "^15.3.4",
     "@tailwindcss/postcss": "^4.1.11",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "@typescript-eslint/eslint-plugin": "^8.35.0",
+    "@typescript-eslint/parser": "^8.35.0",
+    "eslint": "^9.29.0",
+    "eslint-config-next": "^15.3.4",
+    "eslint-config-prettier": "^10.1.5",
+    "eslint-plugin-import": "^2.32.0",
+    "eslint-plugin-prettier": "^5.5.1",
+    "eslint-plugin-simple-import-sort": "^12.1.1",
     "husky": "^9.1.7",
     "lint-staged": "^16.1.2",
+    "prettier": "^3.6.2",
+    "prettier-plugin-tailwindcss": "^0.6.13",
     "tailwindcss": "^4.1.11",
     "typescript": "^5.8.3",
     "ultracite": "^5.0.19"
-  },
-  "engines": {
-    "pnpm": ">=9",
-    "node": ">=22 <=22.14.0"
   }
 }

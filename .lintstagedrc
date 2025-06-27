@@ -1,3 +1,8 @@
 {
-  "*.{js,jsx,ts,tsx,json,md,yml}": ["pnpm run lint:staged"]
+  "*/**/*.{json,css,md}": ["prettier --write"],
+  "*/**/*.{js,jsx,mjs,ts,tsx,yaml}": [
+    "prettier --write",
+    "eslint --fix",
+    "eslint"
+  ]
 }

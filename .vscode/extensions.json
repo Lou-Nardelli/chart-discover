@@ -1,8 +1,10 @@
 {
   "recommendations": [
-    "biomejs.biome",
+    "dbaeumer.vscode-eslint",
+    "esbenp.prettier-vscode",
     "dotenv.dotenvx-vscode",
     "bradlc.vscode-tailwindcss",
+    "editorconfig.editorconfig",
     "vivaxy.vscode-conventional-commits"
   ]
 }
