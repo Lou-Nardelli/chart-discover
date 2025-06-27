@@ -1,13 +1,12 @@
 {
-  "name": "teamwear",
+  "name": "chart-discover",
   "version": "1.0.0",
   "private": true,
   "scripts": {
     "prepare": "node .husky/install.mjs",
-    "clean": "rm -rf .next node_modules",
-    "dev": "dotenvx run --strict -f .env.development -fk .env.keys --overload -- next dev --turbopack",
-    "build": "dotenvx run --strict -f .env.production -fk .env.keys --overload -- next build",
-    "start": "dotenvx run --strict -f .env.production -fk .env.keys --overload -- next start",
+    "dev": "next dev --turbopack",
+    "build": "next build",
+    "start": "next start",
     "test": "echo 'No tests yet'",
     "lint-staged": "lint-staged",
     "lint": "pnpm exec eslint .",
@@ -49,7 +48,6 @@
     "prettier": "^3.6.2",
     "prettier-plugin-tailwindcss": "^0.6.13",
     "tailwindcss": "^4.1.11",
-    "typescript": "^5.8.3",
-    "ultracite": "^5.0.19"
+    "typescript": "^5.8.3"
   }
 }

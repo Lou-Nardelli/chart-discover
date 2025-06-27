@@ -36,7 +36,9 @@
 - Styling: [Tailwind](https://tailwindcss.com/docs/styling-with-utility-classes)
 
 **Tooling**
-- Lint/Format: [Biome](https://biomejs.dev/formatter/)
+
+- Lint: [Eslint](https://eslint.org)
+- Format: [Prettier](https://prettier.io)
 - Variable env: [Dotenvx](https://dotenvx.com/)
 - Git Hooks: [Husky](https://typicode.github.io/husky/how-to.html)
 - Git Lint: [Commit Lint](https://commitlint.js.org/guides/getting-started.html)
@@ -58,6 +60,7 @@
 7. Delete your remote/local branch
 
 **Some more advice:**
+
 - Less is more
 - Ask for help when needed
 - Do pair programming to learn/educate
@@ -65,7 +68,7 @@
 
 ## 📦 How to deploy
 
-### Preview 
+### Preview
 
 When you [create a GitHub PR][createpr], a preview environment with a unique URL is created to show/share your change.  
 When you merge a GitHub PR, your preview environment is automatically deleted.
@@ -74,7 +77,7 @@ When you merge a GitHub PR, your preview environment is automatically deleted.
 
 ### Production
 
-When you [create a GitHub Release][createrelease], a new version is deployed on production. 
+When you [create a GitHub Release][createrelease], a new version is deployed on production.
 
 ### Good to know
 
