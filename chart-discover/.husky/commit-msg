@@ -1,5 +1,0 @@
-#!/bin/bash
-. ~/.nvm/nvm.sh
-nvm use
-
-pnpm exec -- commitlint --edit $1

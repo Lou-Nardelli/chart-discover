@@ -1,7 +1,0 @@
-.next
-.cache
-pnpm-lock.yaml
-public
-node_modules
-next-env.d.ts
-.github/copilot-instructions.md
